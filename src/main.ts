@@ -44,7 +44,7 @@ async function bootstrap() {
 
   // Khởi động server
   const port = process.env.PORT || 3001;
-  const host = process.env.NODE_ENV === 'production' ? '0.0.0.0' : 'localhost';
+  const host = '0.0.0.0';
 
   await app.listen(port, host);
   console.log(`Ứng dụng đang chạy tại: http://${host}:${port}`);
